@@ -9,7 +9,10 @@ for i in range (0,6):
         break
     else:
         if i < 5:
-         print("Try Again")
+            if userChoice > myChoice:
+                print("The number is smaller than your guess")
+            else:
+                print("The number is greater than your guess")
         else:
          print ("Sorry you have exhausted all your chances")
          print ("The number was ", myChoice)
